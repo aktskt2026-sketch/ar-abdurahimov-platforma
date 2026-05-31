@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serverga joylash | AR platforma</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-badge">AR</span>
+        <span>Kasbiy fanlar platformasi<small>Server yo'riqnomasi</small></span>
+      </a>
+      <nav class="menu" aria-label="Asosiy menyu">
+        <a href="../index.html">Bosh sahifa</a>
+        <a href="topics.html">Mavzular</a>
+        <a href="models.html">3D modellar</a>
+        <a href="ar-view.html">AR ko'rish</a>
+        <a href="test.html">Test</a>
+        <a class="active" href="deploy.html">Server</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Ishga tushirish</p>
+        <h1 class="section-title">Online serverga joylash bo'yicha yo'riqnoma</h1>
+        <p class="lead">WebAR kamera funksiyasi to'g'ri ishlashi uchun sayt HTTPS orqali ochilishi kerak. GitHub Pages, Netlify yoki Vercel mos keladi.</p>
+      </div>
+
+      <div class="visual-banner">
+        <img src="https://unsplash.com/photos/M5tzZtFCOfs/download?force=true&w=1400" alt="Server infratuzilmasi">
+        <div class="visual-banner-content">
+          <h2>HTTPS server AR uchun muhim</h2>
+          <p>Kamera ruxsati ko'p brauzerlarda faqat xavfsiz HTTPS manzilda barqaror ishlaydi.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>GitHub Pages</h3>
+          <div class="steps">
+            <div class="step"><p>GitHubda yangi repository yarating va loyiha fayllarini yuklang.</p></div>
+            <div class="step"><p><code>Settings</code> bo'limidan <code>Pages</code> sahifasiga o'ting.</p></div>
+            <div class="step"><p>Branch sifatida <code>main</code> va papka sifatida <code>/root</code> ni tanlang.</p></div>
+            <div class="step"><p>Berilgan HTTPS linkni telefon brauzerida ochib, kamera ruxsatini bering.</p></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Netlify yoki Vercel</h3>
+          <div class="steps">
+            <div class="step"><p>Loyiha papkasini ZIPdan chiqaring.</p></div>
+            <div class="step"><p>Netlify yoki Vercel oynasiga papkani yuklang.</p></div>
+            <div class="step"><p>Avtomatik yaratilgan HTTPS manzil orqali saytni tekshiring.</p></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Lokal sinov</h3>
+          <div class="steps">
+            <div class="step"><p>Windowsda <code>start_local_server.bat</code> faylini ishga tushiring.</p></div>
+            <div class="step"><p>Yoki terminalda <code>python -m http.server 8080</code> buyrug'ini bajaring.</p></div>
+            <div class="step"><p>Brauzerda <code>http://localhost:8080</code> manzilini oching.</p></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="notice">
+        Muhim: AR kamera qismi to'liq ishlashi uchun HTTPS server tavsiya etiladi. Lokal sahifalar ochiladi, lekin ayrim mobil brauzerlar HTTPSsiz kameraga ruxsat bermasligi mumkin. AR sahifa HIRO marker bilan ishlaydi.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Serverga joylash yo'riqnomasi.</div>
+  </footer>
+</body>
+</html>

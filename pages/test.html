@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test | AR platforma</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-badge">AR</span>
+        <span>Kasbiy fanlar platformasi<small>Bilimni tekshirish</small></span>
+      </a>
+      <nav class="menu" aria-label="Asosiy menyu">
+        <a href="../index.html">Bosh sahifa</a>
+        <a href="topics.html">Mavzular</a>
+        <a href="models.html">3D modellar</a>
+        <a href="ar-view.html">AR ko'rish</a>
+        <a class="active" href="test.html">Test</a>
+        <a href="deploy.html">Server</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section test-box">
+      <div class="section-head">
+        <p class="eyebrow">Nazorat bo'limi</p>
+        <h1 class="section-title">Bilimni tekshirish testi</h1>
+        <p class="lead">Savolni o'qing, bitta javobni tanlang va keyingi savolga o'ting.</p>
+      </div>
+      <div class="card">
+        <div class="progress" aria-label="Test jarayoni"><span id="bar"></span></div>
+        <h2 class="question" id="question"></h2>
+        <div id="options"></div>
+        <div class="actions">
+          <button class="btn" id="prev" type="button">Oldingi</button>
+          <button class="btn primary" id="next" type="button">Keyingi</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/test.js"></script>
+</body>
+</html>

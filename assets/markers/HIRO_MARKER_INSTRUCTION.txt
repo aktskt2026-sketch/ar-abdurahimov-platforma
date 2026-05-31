@@ -1,0 +1,3 @@
+AR sahifa AR.js preset="hiro" markeri bilan ishlaydi.
+Internetdan "AR.js HIRO marker" rasmini ochib printerdan chiqaring yoki himoyada ekranda ko'rsating.
+So'ng pages/ar-view.html sahifasini telefonda ochib kamerani markerga qarating.
