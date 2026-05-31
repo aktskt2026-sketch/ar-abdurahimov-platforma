@@ -9,9 +9,10 @@
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
 </head>
 <body class="ar-page">
-  <div class="ar-ui">
+  <div class="ar-ui" id="arHelp">
     <div class="ar-info">
       <b>AR rejim:</b> telefon kamerasi ochilgach HIRO markerga qarating. Marker ustida tanlangan 3D tarmoq obyekti chiqadi.
+      <button class="ar-close" type="button" aria-label="Ko'rsatmani yopish">x</button>
     </div>
     <a class="back" href="../index.html">Orqaga</a>
   </div>
@@ -104,6 +105,11 @@
     };
 
     el.innerHTML = objects[model] || objects.topology;
+
+    const arHelp = document.getElementById('arHelp');
+    const closeButton = document.querySelector('.ar-close');
+    closeButton.addEventListener('click', () => arHelp.classList.add('hidden'));
+    setTimeout(() => arHelp.classList.add('hidden'), 7000);
   </script>
 </body>
 </html>
